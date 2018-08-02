@@ -1,0 +1,8 @@
+version: "3"
+ services:
+   go-examle:
+     image: sparkpos/golang-supervisor
+     volumes:
+       - ./example.conf:/etc/supervisor.d/example.conf
+       - PATH_TO_YOUR_CODE:/go/src/
+     container_name: go-example
